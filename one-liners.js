@@ -56,3 +56,24 @@ let total = 217;
 document.getElementById("p5").innerHTML = `${value} is ${Math.round(
   (value / total) * 100
 )}% of ${total}`;
+
+//* Get a random element in an array
+
+let array2 = [
+  16,
+  "Yes",
+  "blue",
+  false,
+  39.4,
+  "yellow",
+  true,
+  "Thomas",
+  27,
+  "Lucy",
+];
+
+const rndElement = array2[Math.floor(Math.random() * array2.length)];
+
+document.getElementById(
+  "p6"
+).innerHTML = `A random element from array2 is ${rndElement}`;
