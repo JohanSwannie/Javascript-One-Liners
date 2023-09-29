@@ -77,3 +77,22 @@ const rndElement = array2[Math.floor(Math.random() * array2.length)];
 document.getElementById(
   "p6"
 ).innerHTML = `A random element from array2 is ${rndElement}`;
+
+//* Remove duplicates in an array
+
+const array3 = [
+  "Mary",
+  "Joe",
+  "Luke",
+  "Peter",
+  "Thomas",
+  "Joe",
+  "Mary",
+  "Carl",
+];
+
+const newArray3 = (arr) => [...new Set(arr)];
+
+document.getElementById(
+  "p7"
+).innerHTML = `Array without duplicate is [${newArray3(array3)}]`;
