@@ -120,3 +120,24 @@ for (instance of array5) {
 }
 
 document.getElementById("p8").innerHTML = array6;
+
+//* Check if arrays are equal
+
+const areTheyEqual = (arr1, arr2) =>
+  JSON.stringify(arr1) === JSON.stringify(arr2);
+
+let array7 = [3, 4, 5];
+let array8 = ["3", 4, "5"];
+let array9 = [10, 11, 12];
+let array10 = [10, 11, 12];
+
+document.getElementById(
+  "p9"
+).innerHTML = `Is array 7 and array 8 equal - ${areTheyEqual(array7, array8)}`;
+
+document.getElementById(
+  "p10"
+).innerHTML = `Is array 9 and array 10 equal - ${areTheyEqual(
+  array9,
+  array10
+)}`;
