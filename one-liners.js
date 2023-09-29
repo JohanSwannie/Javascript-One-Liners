@@ -201,7 +201,7 @@ const insertElement = (arr, index, newElement) => [
   ...arr.slice(index),
 ];
 
-const array20 = [
+let array20 = [
   "Auckland",
   "Wellington",
   27,
@@ -211,8 +211,8 @@ const array20 = [
   "ChristChurch",
 ];
 
-const newArray20 = insertElement(array20, 2, "Hamilton");
+array20 = insertElement(array20, 2, "Hamilton");
 
 document.getElementById(
   "p14"
-).innerHTML = `The new array after inserting an element at index 2 is now ${newArray20}`;
+).innerHTML = `The new array after inserting an element at index 2 is now ${array20}`;
