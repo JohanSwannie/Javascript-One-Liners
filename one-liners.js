@@ -193,7 +193,7 @@ document.getElementById(
   "p13"
 ).innerHTML = `The people working in this company are ${fullNames} with positions like ${positions}`;
 
-//* Insert an element at a certain position in an array
+//* Insert an element at a certain position in an array - The long way
 
 const insertElement = (arr, index, newElement) => [
   ...arr.slice(0, index),
@@ -216,3 +216,9 @@ array20 = insertElement(array20, 2, "Hamilton");
 document.getElementById(
   "p14"
 ).innerHTML = `The new array after inserting an element at index 2 is now ${array20}`;
+
+//* Insert an element at a certain position in an array - The short way
+
+array20.splice(2, 0, "Hallo");
+
+alert(array20);
