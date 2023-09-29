@@ -8,13 +8,11 @@ document.getElementById("p1").innerHTML = `${oneWord} now became ${capitalize(
   oneWord
 )}`;
 
-//* Capitalize each word in a sentence
+//* Capitalize each word in a sentence - Longer Method
 
 const sentence = "the black bear eat potatoes";
 
 const words = sentence.split(" ");
-
-//* Longer Method
 
 for (let i = 0; i < words.length; i++) {
   words[i] = words[i][0].toUpperCase() + words[i].substring(1);
@@ -24,11 +22,15 @@ const newSentence1 = words.join(" ");
 
 document.getElementById(
   "p2"
-).innerHTML = `Long Method - ${sentence} became ${newSentence1}`;
+).innerHTML = `Long Method - "${sentence}" changed to --- ${newSentence1}`;
 
-//* Shorter Method
+//* Capitalize each word in a sentence - Shorter Method
 
-const newSentence2 = words
+const sentence2 = "pinky the pink elephant eat bananas";
+
+const words2 = sentence2.split(" ");
+
+const newSentence2 = words2
   .map((word) => {
     return word[0].toUpperCase() + word.substring(1);
   })
@@ -36,17 +38,21 @@ const newSentence2 = words
 
 document.getElementById(
   "p3"
-).innerHTML = `Shorter Method - ${sentence} became ${newSentence2}`;
+).innerHTML = `Shorter Method - "${sentence2}" changed to --- ${newSentence2}`;
 
-//* Shortest Method
+//* Capitalize each word in a sentence - Shortest Method
 
-const newSentence3 = sentence.replace(/(^\w{1})|(\s+\w{1})/g, (letter) =>
+const sentence3 = "they walked down the hill and reached the sea";
+
+const words3 = sentence3.split(" ");
+
+const newSentence3 = sentence3.replace(/(^\w{1})|(\s+\w{1})/g, (letter) =>
   letter.toUpperCase()
 );
 
 document.getElementById(
   "p4"
-).innerHTML = `Shortest Method - ${sentence} became ${newSentence3}`;
+).innerHTML = `Shortest Method - "${sentence3}" changed to --- ${newSentence3}`;
 
 //* Calculate percentage
 
@@ -167,3 +173,22 @@ waitForIt(5000).then(
       "p12"
     ).innerHTML = `We have waited for 5 seconds and here we are now`)
 );
+
+//* Iterate quickly through objects to get properties
+
+const getDetails = (objects, key) => objects.map((obj) => obj[key]);
+
+const company = [
+  { fullName: "Danny Brown", position: "Manager" },
+  { fullName: "Mary Cooper", position: "Personal Assistant" },
+  { fullName: "Luke Sidaway", position: "Software Developer" },
+  { fullName: "David Frost", position: "Senior Manager" },
+];
+
+const fullNames = getDetails(company, "fullName");
+
+const positions = getDetails(company, "position");
+
+document.getElementById(
+  "p13"
+).innerHTML = `The people working in this company are ${fullNames} with positions like ${positions}`;
