@@ -141,3 +141,29 @@ document.getElementById(
   array9,
   array10
 )}`;
+
+//* Count the number of specified occurences in an array
+
+const numberOfElement = (arr, item) =>
+  arr.reduce((a, val) => (val === item ? a + 1 : a), 0);
+
+let array11 = ["blue", "Yellow", true, 19, "blue", "red", "false", "blue"];
+
+document.getElementById(
+  "p11"
+).innerHTML = `The value 'blue' occurs ${numberOfElement(
+  array11,
+  "blue"
+)} times in array11`;
+
+//* How to wait for a certain amount of time before executing the next piece of code
+
+const waitForIt = async (milliseconds) =>
+  new Promise((resolve) => setTimeout(resolve, milliseconds));
+
+waitForIt(5000).then(
+  () =>
+    (document.getElementById(
+      "p12"
+    ).innerHTML = `We have waited for 5 seconds and here we are now`)
+);
