@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: blanchedalmond;
+  min-height: 100vh;
+}
+
+.container {
+  width: 40vw;
+  margin: auto;
+  padding: 1.25rem;
+  border: 1px solid #000;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
