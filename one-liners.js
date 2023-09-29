@@ -171,7 +171,7 @@ waitForIt(5000).then(
   () =>
     (document.getElementById(
       "p12"
-    ).innerHTML = `We have waited for 5 seconds and here we are now`)
+    ).innerHTML = `<h4 style="font-size: 1.3rem">We have waited for 5 seconds and here we are now</h4>`)
 );
 
 //* Iterate quickly through objects to get properties
@@ -219,6 +219,8 @@ document.getElementById(
 
 //* Insert an element at a certain position in an array - The short way
 
-array20.splice(2, 0, "Hallo");
+let array21 = [1, "Yes", 27, "Luke Brown", true, 44, "Pinetown", "No"];
 
-alert(array20);
+array21.splice(4, 0, "Mary Cooper");
+
+document.getElementById("p15").innerHTML = `The new array is now ${array21}`;
