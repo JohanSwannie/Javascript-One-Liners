@@ -192,3 +192,27 @@ const positions = getDetails(company, "position");
 document.getElementById(
   "p13"
 ).innerHTML = `The people working in this company are ${fullNames} with positions like ${positions}`;
+
+//* Insert an element at a certain position in an array
+
+const insertElement = (arr, index, newElement) => [
+  ...arr.slice(0, index),
+  newElement,
+  ...arr.slice(index),
+];
+
+const array20 = [
+  "Auckland",
+  "Wellington",
+  27,
+  true,
+  "Nelson",
+  "Kaiteriteri",
+  "ChristChurch",
+];
+
+const newArray20 = insertElement(array20, 2, "Hamilton");
+
+document.getElementById(
+  "p14"
+).innerHTML = `The new array after inserting an element at index 2 is now ${newArray20}`;
