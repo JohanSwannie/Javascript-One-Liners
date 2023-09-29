@@ -96,3 +96,27 @@ const newArray3 = (arr) => [...new Set(arr)];
 document.getElementById(
   "p7"
 ).innerHTML = `Array without duplicate is [${newArray3(array3)}]`;
+
+//* Sort elements by a certain property
+
+const sortByProperty = (passedArray, key) =>
+  passedArray.sort((a, b) => (a[key] > b[key] ? 1 : a[key] < b[key] ? -1 : 0));
+
+let array4 = [
+  { order: 4, item: "Buffalo" },
+  { order: 2, item: "Hippopotamus" },
+  { order: 3, item: "Rhinoceros" },
+  { order: 1, item: "Elephant" },
+];
+
+let array5 = sortByProperty(array4, "order");
+
+let array6 = [];
+
+for (instance of array5) {
+  for (value in instance) {
+    array6.push(`${value}: ${instance[value]}`);
+  }
+}
+
+document.getElementById("p8").innerHTML = array6;
