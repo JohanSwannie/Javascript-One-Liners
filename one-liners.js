@@ -47,3 +47,12 @@ const newSentence3 = sentence.replace(/(^\w{1})|(\s+\w{1})/g, (letter) =>
 document.getElementById(
   "p4"
 ).innerHTML = `Shortest Method - ${sentence} became ${newSentence3}`;
+
+//* Calculate percentage
+
+let value = 39;
+let total = 217;
+
+document.getElementById("p5").innerHTML = `${value} is ${Math.round(
+  (value / total) * 100
+)}% of ${total}`;
