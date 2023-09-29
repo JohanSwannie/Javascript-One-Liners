@@ -37,3 +37,13 @@ const newSentence2 = words
 document.getElementById(
   "p3"
 ).innerHTML = `Shorter Method - ${sentence} became ${newSentence2}`;
+
+//* Shortest Method
+
+const newSentence3 = sentence.replace(/(^\w{1})|(\s+\w{1})/g, (letter) =>
+  letter.toUpperCase()
+);
+
+document.getElementById(
+  "p4"
+).innerHTML = `Shortest Method - ${sentence} became ${newSentence3}`;
