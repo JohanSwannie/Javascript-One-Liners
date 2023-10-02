@@ -182,7 +182,7 @@ const company = [
   { fullName: "Danny Brown", position: "Project Manager" },
   { fullName: "Mary Cooper", position: "Personal Assistant" },
   { fullName: "Luke Sidaway", position: "Software Developer" },
-  { fullName: "David Frost", position: "Senior Manager" },
+  { fullName: "David Frost", position: "Senior Project Manager" },
 ];
 
 const fullNames = getDetails(company, "fullName");
