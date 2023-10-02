@@ -221,6 +221,6 @@ document.getElementById(
 
 let array21 = [1, "Yes", 27, "Luke Brown", true, 44, "Pinetown", "No"];
 
-array21.splice(4, 0, "Mary Cooper");
+array21.splice(4, 0, "Mary Brown");
 
 document.getElementById("p15").innerHTML = `The new array is now ${array21}`;
