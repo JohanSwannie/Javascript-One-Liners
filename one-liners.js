@@ -179,7 +179,7 @@ waitForIt(5000).then(
 const getDetails = (objects, key) => objects.map((obj) => obj[key]);
 
 const company = [
-  { fullName: "Danny Brown", position: "Manager" },
+  { fullName: "Danny Brown", position: "Project Manager" },
   { fullName: "Mary Cooper", position: "Personal Assistant" },
   { fullName: "Luke Sidaway", position: "Software Developer" },
   { fullName: "David Frost", position: "Senior Manager" },
