@@ -92,16 +92,17 @@ const array3 = [
   "Luke",
   "Peter",
   "Thomas",
+  "Luke",
   "Joe",
   "Mary",
   "Carl",
 ];
 
-const newArray3 = (arr) => [...new Set(arr)];
+const newArray3 = [...new Set(array3)];
 
 document.getElementById(
   "p7"
-).innerHTML = `Array without duplicate is [${newArray3(array3)}]`;
+).innerHTML = `Array without duplicate is [${newArray3}]`;
 
 //* Sort elements by a certain property
 
