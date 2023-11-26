@@ -172,7 +172,7 @@ waitForIt(5000).then(
   () =>
     (document.getElementById(
       "p12"
-    ).innerHTML = `<h4 style="font-size: 1.3rem">We have waited for 5 seconds and here we are now</h4>`)
+    ).innerHTML = `<h4 style="font-size: 1.3rem; color: red">We have waited for 5 seconds and here we are now</h4>`)
 );
 
 //* Iterate quickly through objects to get properties
