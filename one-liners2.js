@@ -10,7 +10,7 @@ const displayLoop = () => {
   container.appendChild(pippy);
   document.getElementById(
     `${p}`
-  ).innerHTML = `This is display number ${n} of the loop`;
+  ).innerHTML = `This is display number <b>[ ${n} ]</b> of the loop`;
   if (o === 10) {
     clearInterval(displayLoopId);
   }
@@ -20,4 +20,4 @@ const displayLoop = () => {
 
 let displayLoopId;
 
-displayLoopId = setInterval(displayLoop, 5000);
+displayLoopId = setInterval(displayLoop, 1000);
