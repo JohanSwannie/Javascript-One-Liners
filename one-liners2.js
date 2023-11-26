@@ -10,7 +10,7 @@ const displayLoop = () => {
   container.appendChild(pippy);
   document.getElementById(
     `${p}`
-  ).innerHTML = `<h4 style="font-size: 1.3rem; color: red">We have waited for 5 seconds and here we are now</h4>`;
+  ).innerHTML = `This is display number ${n} of the loop`;
   if (o === 10) {
     clearInterval(displayLoopId);
   }
