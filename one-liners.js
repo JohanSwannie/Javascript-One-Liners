@@ -4,6 +4,10 @@ const oneWord = "potatoes";
 
 const capitalize = (word) => `${word.charAt(0).toUpperCase()}${word.slice(1)}`;
 
+// OR
+//   const capitalize = (word) =>
+//   `${word.charAt(0).toUpperCase()}${word.substring(1)}`;
+
 document.getElementById("p1").innerHTML = `${oneWord} now became ${capitalize(
   oneWord
 )}`;
