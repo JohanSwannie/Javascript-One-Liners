@@ -8,3 +8,17 @@ let newSentence = words
   .join(" ");
 
 alert(newSentence);
+
+// ------------------------------------------------------
+
+const sentence3 = "they walked down the hill and reached the sea";
+
+const words3 = sentence3.split(" ");
+
+const newSentence3 = sentence3.replace(/(^\w{1})|(\s+\w{1})/g, (letter) =>
+  letter.toUpperCase()
+);
+
+document.getElementById(
+  "p4"
+).innerHTML = `Shortest Method - "${sentence3}" changed to --- ${newSentence3}`;
