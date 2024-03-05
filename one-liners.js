@@ -110,7 +110,7 @@ document.getElementById(
 
 //* Sort elements by a certain property
 
-const sortByProperty = (passedArray, key) =>
+const sortByProperty = (passedArray) =>
   passedArray.sort((a, b) => (a[key] > b[key] ? 1 : a[key] < b[key] ? -1 : 0));
 
 let array4 = [
@@ -121,6 +121,8 @@ let array4 = [
 ];
 
 let array5 = sortByProperty(array4, "order");
+
+alert(array5);
 
 let array6 = [];
 
