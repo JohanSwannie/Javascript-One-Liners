@@ -32,6 +32,6 @@ alert([...new Set(array1)].sort((a, b) => a - b));
 const array = [14, 67, 24, 7, 14, 12, 33, 7, 67];
 alert(
   array
-    .filter((value, index, self) => self.indexOf(value) === index)
+    .filter((item, index, self) => self.indexOf(item) === index)
     .sort((a, b) => a - b)
 );
