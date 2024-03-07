@@ -116,7 +116,7 @@ console.log(array4.sort((a, b) => a - b));
 
 // Remove Duplicates in an array using OLDER method 2
 
-const array5 = [31, 3, 17, 9, 4, 10, 3, 19, 22, 4, 31, 20];
+const array5 = [31, 3, 17, 9, 4, 10, 3, 19, 22, "Luke", 4, 31, 20];
 
 let object12 = {};
 
