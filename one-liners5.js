@@ -125,3 +125,22 @@ for (let item of array5) {
 }
 
 console.log(Object.keys(object12));
+
+// Remove Duplicates in an array using OLDER method 3
+
+let array6 = [91, 45, 51, 67, 39, 81, 43, 67, 60, 91, 22, 51, 45];
+
+array6.sort((a, b) => a - b);
+
+let array7 = [];
+
+let saveValue;
+
+for (let i = 0; i < array6.length; i++) {
+  if (array6[i] !== saveValue) {
+    array7.push(array6[i]);
+    saveValue = array6[i];
+  }
+}
+
+console.log(array7);
