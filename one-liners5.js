@@ -29,6 +29,42 @@ for (let item of obj2) {
   }
 }
 
+const object10 = [
+  {
+    name: "John",
+    age: 25,
+    career: "Boxing",
+  },
+  {
+    name: "Luke",
+    age: 22,
+    career: "Plumbing",
+  },
+  {
+    name: "Mary",
+    age: 29,
+    career: "Accounting",
+  },
+  {
+    name: "Paul",
+    age: 28,
+    career: "Civil Engineering",
+  },
+  {
+    name: "Gert",
+    age: 33,
+    career: "Project Management",
+  },
+];
+
+const object11 = object10.sort((a, b) => (a.name > b.name ? 1 : -1));
+
+for (item of object11) {
+  for (value in item) {
+    console.log(`${value} : ${item[value]}`);
+  }
+}
+
 const array1 = [19, 33, 7, 28, 30, 17, 33, 20, 24, 19, 19, 7];
 
 console.log([...new Set(array1)].sort((a, b) => a - b));
