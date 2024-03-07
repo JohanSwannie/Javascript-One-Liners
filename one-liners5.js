@@ -144,3 +144,25 @@ for (let i = 0; i < array6.length; i++) {
 }
 
 console.log(array7);
+
+// Filter types of items from an array
+
+const array8 = ["Billy", 29, true, 24.55, "Mary", "Koos", 33, false, "Yes", 22];
+
+console.log(
+  `The items in the array that are BOOLEANS are ${array8.filter(
+    (item) => typeof item === "boolean"
+  )}`
+);
+
+console.log(
+  `The items in the array that are NUMBERS are ${array8.filter(
+    (item) => typeof item === "number"
+  )}`
+);
+
+console.log(
+  `The items in the array that are STRINGS are ${array8.filter(
+    (item) => typeof item === "string"
+  )}`
+);
