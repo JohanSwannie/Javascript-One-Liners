@@ -1,3 +1,5 @@
+// Sort Objects in an array for numeric data
+
 const obj1 = [
   {
     id: 129921,
@@ -28,6 +30,8 @@ for (let item of obj2) {
     console.log(`${val} : ${item[val]}`);
   }
 }
+
+// Sort Objects in an array for string data
 
 const object10 = [
   {
@@ -65,9 +69,13 @@ for (item of object11) {
   }
 }
 
+// Remove Duplicates in an array using SET
+
 const array1 = [19, 33, 7, 28, 30, 17, 33, 20, 24, 19, 19, 7];
 
 console.log([...new Set(array1)].sort((a, b) => a - b));
+
+// Remove Duplicates in an array using FILTER
 
 const array = [14, 67, 24, 7, 14, 12, 33, 7, 67];
 
@@ -76,6 +84,8 @@ console.log(
     .filter((item, index, self) => self.indexOf(item) === index)
     .sort((a, b) => a - b)
 );
+
+// Remove Duplicates in an array using REDUCE
 
 const array2 = [31, 29, 10, 45, 10, 12, 44, 31, 25, 29, 45, 7];
 
@@ -89,3 +99,7 @@ console.log(
     }, [])
     .sort((a, b) => a - b)
 );
+
+// Remove Duplicates in an array using OLD methods
+
+const array3 = [29, 18, 20, 7, 10, 29, 4, 14, 11, 7, 20, 44, 30, 7];
