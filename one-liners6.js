@@ -65,3 +65,5 @@ const removeDuplicates2 = array3
   .sort((a, b) => a - b);
 
 console.log(`array3 without duplicates using filter = ${removeDuplicates2}`);
+
+console.log(_.uniq([1, 12, 9, 3, 4, 5, 6, 4, 3, 2, 1]));
