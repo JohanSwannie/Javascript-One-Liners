@@ -100,6 +100,16 @@ console.log(
     .sort((a, b) => a - b)
 );
 
-// Remove Duplicates in an array using OLD methods
+// Remove Duplicates in an array using OLDER method 1
 
-const array3 = [29, 18, 20, 7, 10, 29, 4, 14, 11, 7, 20, 44, 30, 7];
+const array3 = [29, 18, 20, 7, 10, 29, 4, 14, 11, 7, 20, 40, 30, 7];
+
+let array4 = [];
+
+for (let i = 0; i < array3.length; i++) {
+  if (array4.indexOf(array3[i]) === -1) {
+    array4.push(array3[i]);
+  }
+}
+
+console.log(array4.sort((a, b) => a - b));
