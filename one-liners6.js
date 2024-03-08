@@ -79,3 +79,39 @@ const howManyTimes = (array6, value) =>
 console.log(
   `array6 with value true appears ${howManyTimes(array6, true)} times`
 );
+
+const object13 = [
+  {
+    name: "Koos",
+    age: 46,
+    career: "Farmer",
+  },
+  {
+    name: "Thomas",
+    age: 35,
+    career: "Project Manager",
+  },
+  {
+    name: "Gert",
+    age: 51,
+    career: "Painter",
+  },
+  {
+    name: "James",
+    age: 50,
+    career: "Geologist",
+  },
+  {
+    name: "Mary",
+    age: 49,
+    career: "Artist",
+  },
+];
+
+const names = object13.map((item) => item["name"]);
+const ages = object13.map((item) => item["age"]);
+const careers = object13.map((item) => item["career"]);
+
+for (let i = 0; i < names.length; i++) {
+  console.log(`${names[i]} is ${ages[i]} years old and is a ${careers[i]}`);
+}
