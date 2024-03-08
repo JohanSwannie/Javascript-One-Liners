@@ -162,7 +162,7 @@ document.getElementById(
 //* Count the number of specified occurences in an array
 
 const numberOfElement = (arr, item) =>
-  arr.reduce((a, val) => (val === item ? a + 1 : a), 0);
+  arr.reduce((pVal, cVal) => (cVal === item ? pVal + 1 : pVal), 0);
 
 let array11 = ["blue", "Yellow", true, 19, "blue", "red", "false", "blue"];
 
