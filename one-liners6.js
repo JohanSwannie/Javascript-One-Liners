@@ -68,7 +68,7 @@ console.log(`array3 without duplicates using filter = ${removeDuplicates2}`);
 
 // console.log(_.uniq([1, 12, 9, 3, 4, 5, 6, 4, 3, 2, 1]));
 
-const array6 = [true, 19, "city", false, 18.55, true, "yes", "no", true];
+const array6 = [true, 19, "city", false, 19, 18.55, true, "yes", "no", true];
 
 const howManyTimes = (array6, value) =>
   array6.reduce(
