@@ -176,7 +176,7 @@ document.getElementById(
 //* How to wait for a certain amount of time before executing the next piece of code
 
 const waitForIt = async (milliseconds) =>
-  new Promise((resolve) => setTimeout(resolve, milliseconds));
+  new Promise((poeperWaiter) => setTimeout(poeperWaiter, milliseconds));
 
 waitForIt(5000).then(
   () =>
@@ -187,7 +187,7 @@ waitForIt(5000).then(
 
 //* Iterate quickly through objects to get properties
 
-const getDetails = (objects, key) => objects.map((obj) => obj[key]);
+const getDetails = (objectName, key) => objectName.map((obj) => obj[key]);
 
 const company = [
   { fullName: "Danny Brown", position: "Project Manager" },
